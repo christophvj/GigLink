@@ -188,7 +188,6 @@
     <Content Include="HTML\signIn.html" />
     <Content Include="HTML\signup.html" />
     <Content Include="HTML\welcome.html" />
-    <Content Include="LoginPage.html" />
     <Content Include="Public\css\form.css" />
     <Content Include="Public\css\index.css" />
     <Content Include="Public\css\welcome.css" />
