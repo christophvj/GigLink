@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="../Public/css/form.css">
+    <style>
+    </style>
+</head>
+<body>
+    <form action="signup.html" method="post">
+        <div class="container">
+            <h3>Sign Up</h3>
+
+            <label for="classificationInput"></label>
+            <select name="classification" id="classificationInput">
+                <option value=""></option>
+                <option value="Band">Band</option>
+                <option value="Artist">Solo Artist</option>
+                <option value="Venue">Venue</option>
+            </select>
+
+            <label for="name" id="nameLabel">Name</label>
+            <input type="text" name="name" id="nameInput" class="input-text" required placeholder="Enter your name">
+
+            <label for="emailInput">Email</label>
+            <input type="email" name="email" id="emailInput" class="input-text" required placeholder="Enter your email">
+
+            <label for="passwordInput">Password</label>
+            <input type="password" name="password" id="passwordInput" class="input-text" required placeholder="Enter your password" minlength="8">
+
+            <label for="passwordConfirmInput">Confirm Password</label>
+            <input type="password" name="confirmPassword" id="passwordConfirmInput" class="input-text" required placeholder="Confirm your password" minlength="8">
+
+            <!-- <p>passwords does not match</p> -->
+
+            <br>
+
+            <button type="submit" class="btn-primary">Sign Up</button>
+
+            <a href="./profileSetup.html">Next page for testing and demo</a>
+            <br>
+            <a href="./signIn.html">Sign In</a>
+        </div>
+    </form>
+
+    <script src="../js/signup.js"></script>
+</body>
+</html>
