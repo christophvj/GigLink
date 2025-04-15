@@ -8,6 +8,7 @@ body {
     margin: 0;
     background-color: #f0f2f5;
 }
+
 form {
     background-color: white;
     padding: 2rem;
@@ -17,17 +18,20 @@ form {
     max-width: 400px;
     text-align: center;
 }
+
 .container {
     text-align: center;
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5rem;
 }
+
 label {
     font-size: 1.25rem;
     color: #000000;
     margin-bottom: 0.25rem;
 }
+
 .input-text {
     padding: 0.75rem;
     font-size: 1rem;
@@ -36,11 +40,13 @@ label {
     width: 100%;
     box-sizing: border-box;
 }
-.input-text:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-}
+
+    .input-text:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+
 .btn-primary {
     background-color: #007bff;
     color: white;
@@ -52,9 +58,10 @@ label {
     width: 100%;
     transition: background-color 0.3s;
 }
-.btn-primary:hover {
-    background-color: #0056b3;
-}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
 
 select {
     padding: 0.75rem;
@@ -65,12 +72,12 @@ select {
     box-sizing: border-box;
 }
 
-.main-div{
+.main-div {
     background-color: white;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    text-align: center; 
+    text-align: center;
 }
