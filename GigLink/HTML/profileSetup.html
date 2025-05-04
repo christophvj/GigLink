@@ -9,20 +9,68 @@
     </style>
 </head>
 <body>
-    <form action="profileSetup.html" method="post">
+    <form action="profileSetup.html" method="post" style="display: inline;">
         <div class="container">
-            <h3>Profile Setup</h3>
+            <h1>My profile <span><img src="../Public/images/circle-user-regular.svg" alt="Profile Icon" onclick="uploadProfilePicture()" style="cursor: pointer; width: 30px; height: 30px; padding-top: 2px; margin-top: 3px;"></span></h1>
+
+            <label for="classificationInput"></label>
+            <select name="classification" id="classificationInput">
+                <option value=""></option>
+                <option value="Band">Band</option>
+                <option value="Artist">Solo Artist</option>
+                <option value="Venue">Venue</option>
+            </select>
+
+            <label for="name" id="nameLabel">Name</label>
+            <input type="text" name="name" id="nameInput" class="input-text" required placeholder="Enter your name">
+
+            <label for="description" id="descriptionLabel">Description</label>
+            <input type="text" name="description" id="descriptionInput" class="input-text" required placeholder="Enter your Description">
+
+            <label for="location">Location</label>
+            <input type="text" name="location" id="locationInput" class="input-text" required placeholder="Enter your location">
+
+            <label for="genre" id="genreLabel">Genre</label>
             <hr>
-            <label for="nameInput">Name</label>
-            <input type="text" name="nameInput" id="nameInput" class="input-text" required placeholder="Enter your name">
+            <div class="checkbox-container" id="genreContainer">
+                <input type="checkbox" id="genre1" name="genre1" value="Rock" onchange="limitCheckboxes()">
+                <label for="genre1">Rock</label><br>
+                <input type="checkbox" id="genre2" name="genre2" value="Pop" onchange="limitCheckboxes()">
+                <label for="genre2">Pop</label><br>
+                <input type="checkbox" id="genre3" name="genre3" value="Jazz" onchange="limitCheckboxes()">
+                <label for="genre3">Jazz</label><br>
+                <input type="checkbox" id="genre4" name="genre4" value="Classical" onchange="limitCheckboxes()">
+                <label for="genre4">Classical</label><br>
+                <input type="checkbox" id="genre5" name="genre5" value="HipHop" onchange="limitCheckboxes()">
+                <label for="genre5">Hip Hop</label><br>
+                <input type="checkbox" id="genre6" name="genre6" value="Country" onchange="limitCheckboxes()">
+                <label for="genre6">Country</label><br>
+                <input type="checkbox" id="genre7" name="genre7" value="Electronic" onchange="limitCheckboxes()">
+                <label for="genre7">Electronic</label><br>
+                <input type="checkbox" id="genre8" name="genre8" value="Reggae" onchange="limitCheckboxes()">
+                <label for="genre8">Reggae</label><br>
+                <input type="checkbox" id="genre9" name="genre9" value="Blues" onchange="limitCheckboxes()">
+                <label for="genre9">Blues</label><br>
+            </div>
 
-            <label for="descriptionInput">Description</label>
-            <input type="text" name="descriptionInput" id="descriptionInput" class="input-text">
+            <div id="facilitiesContainer">
+                <label for="facilities">Facilities</label>
+                <textarea name="facilities" id="facilitiesInput" class="input-text" placeholder="List your facilities here"></textarea>
+            </div>
+
+            <label for="contactPerson">Contact Person</label>
+            <input type="text" name="contactPerson" id="contactPersonInput" class="input-text" required placeholder="Enter contact person's name">
+
+            <label for="contactEmail">Contact Email</label>
+            <input type="email" name="contactEmail" id="contactEmailInput" class="input-text" required placeholder="Enter contact email">
+
+            <label for="contactPhone">Contact Phone Number</label>
+            <input type="tel" name="contactPhone" id="contactPhoneInput" class="input-text" required placeholder="Enter contact phone number" maxlength="10" minlength="10">
         </div>
-
-        <button type="submit" class="btn-primary">Sign In</button>
-
-        <a href="./signup.html">Sign Up</a>
+        <!--<button type="submit" class="btn-green">save</button>-->
+        <button type="submit" class="btn-primary">Sign Up</button>
     </form>
+
+    <script src="../Public/js/profile.js"></script>
 </body>
 </html>
