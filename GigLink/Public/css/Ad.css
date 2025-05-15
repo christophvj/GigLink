@@ -1,0 +1,145 @@
+﻿/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f8;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #6a3c9c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .header button {
+        margin-left: 20px;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        background: linear-gradient(45deg, #8e44ad, #b084f7);
+        color: white;
+        font-size: 16px;
+        transition: background 0.3s ease, transform 0.2s;
+    }
+
+        .header button:hover {
+            background: linear-gradient(45deg, #9b59b6, #a66cfa);
+            transform: scale(1.05);
+        }
+
+/* Profile Circle Button */
+.profile-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-image: url('../Public/images/Tiaan.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #8e44ad;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-left: 30px;
+}
+
+    .profile-button:hover {
+        transform: scale(1.05);
+    }
+
+/* Filter Section Styling */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 0;
+    background-color: #f9f1ff;
+    flex-wrap: wrap;
+    border-top: 2px solid #b084f7;
+}
+
+.filter-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: box-shadow 0.3s ease;
+}
+
+    .filter-box:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .filter-box label {
+        margin-bottom: 10px;
+        color: #6a3c9c;
+    }
+
+    .filter-box select {
+        padding: 10px 15px;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+        color: #333;
+        background-color: #f3f3f3;
+        transition: background-color 0.3s ease;
+    }
+
+        .filter-box select:hover {
+            background-color: #e9d8ff;
+        }
+
+        .filter-box select:focus {
+            outline: none;
+            border-color: #b084f7;
+        }
+
+/* Container for the ad blocks */
+.ad-container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px; /* This sets a clear space between ads */
+    padding: 20px;
+}
+
+/* Individual ad block */
+.ad-block {
+    width: 22%; /* Smaller width to fit more in a row */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+    /* Hover effect for ads */
+    .ad-block:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(106, 60, 156, 0.3);
+    }
+
+/* Ad image styling */
+.ad-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Content inside the ad */
+.ad-content {
+    padding: 12px;
+}
+
