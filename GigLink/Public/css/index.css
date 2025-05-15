@@ -6,12 +6,12 @@ body {
 
 .navbar {
     display: flex;
-    background-color: #333;
+    background-color: ghostwhite;
     overflow: hidden;
 }
 
     .navbar a {
-        flex: 1;
+        flex: 0;
         padding: 14px 20px;
         text-align: center;
         text-decoration: none;
@@ -28,3 +28,55 @@ iframe {
     height: calc(100vh - 50px);
     border: none;
 }
+
+.navbar .nav_button {
+    margin-left: auto;
+    padding: 10px 16px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ad-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f0f0f0;
+}
+
+.ad-block {
+    background-color: #fff;
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 50px
+}
+
+    .ad-block:hover {
+        transform: scale(1.03);
+    }
+
+.ad-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.ad-content {
+    padding: 15px;
+}
+
+    .ad-content h2 {
+        margin-top: 0;
+        font-size: 20px;
+        color: #333;
+    }

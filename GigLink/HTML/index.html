@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabbed Navigation</title>
     <link rel="stylesheet" href="../Public/css/index.css">
+    <script src="../Public/js/container.js"></script>
 </head>
 
 <body>
     <div class="navbar">
-        <a onclick="loadPage('page 1.html')">page 1</a>
-        <a onclick="loadPage('page 2.html')">page 2</a>
-        <a onclick="loadPage('page 3.html')">page 3</a>
-        <a onclick="loadPage('page 4.html')">page 4</a>
-        <a onclick="loadPage('page 5.html')">page 5</a>
-        <a onclick="loadPage('page 6.html')">page 6</a>
+
+
+        <a onclick="loadPage('Creat_Adv_Page.html')" class="nav_button">Create Advertisement</a>
+
         <span>
             <a onclick="loadPage('profileSetup.html')">
                 <img src="../Public/images/circle-user-regular.svg" alt="Profile Icon" onclick="uploadProfilePicture()" style="cursor: pointer; width: 30px; height: 30px; padding-top: 2px; margin-top: 3px;">
@@ -23,7 +22,7 @@
     </div>
 
 
-    <!-- <iframe id="contentFrame" src="home.html" style="width: 100%; height: 80vh; border: none;"></iframe> -->
+    <iframe id="contentFrame" src="home.html" style="width: 100%; height: 80vh; border: none;"></iframe>
 
     <div id="adContainerWrapper" class="container-wrapper"></div>
 
@@ -33,5 +32,6 @@
             document.getElementById('contentFrame').src = page;
         }
     </script>
+
 </body>
 </html>

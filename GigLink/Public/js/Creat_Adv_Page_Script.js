@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const bandAdForm = document.getElementById('bandAdForm');
 
     if (bandAdForm) {
-        // --- Add any form-specific JavaScript logic here ---
+  
 
-        // Example: Add event listener for form submission
+        // Add event listener for form submission
         bandAdForm.addEventListener('submit', (event) => {
-            // Example: Perform custom validation before submitting
+            // Perform custom validation before submitting
             console.log("Form submitted. Performing validation (example)...");
 
             // Get date input value
